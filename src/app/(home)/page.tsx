@@ -15,23 +15,22 @@ export default function Home() {
         <div className="relative rounded rounded-xl bg-gray-100 min-h-[30vh] w-full xl:min-w-[50%] 2xl:minw-[60%] shadow-lg  p-20 overflow-hidden xl:min-w-[650px]">
           <h5 className="font-bold text-2xl">Streamline Your Study Sessions</h5>
           <div className="relative z-10 xl:ml-[40%] 2xl:mt-14 2xl:max-w-xl max-w-xl">
-            <p className="text-xl mt-10">
+            <p className="text-xl mt-5">
               Transform lecture notes and textbooks into concise study guides,
               making revision more efficient
             </p>
-            <p className=" text-xl mt-10">
+            <p className=" text-xl mt-7">
               Discover insights from{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-400 font-bold">
                 millions of unread lines
               </span>{" "}
               and thousands of texts
-              <span className="ml-5"> </span>
             </p>
           </div>
           <div className="max-w-[380px] absolute bottom-0 left-0 invisible xl:visible">
             <img className="cover" src="/student-3.png" />
           </div>
-          <div className="2xl:mt-40 mt-16 2xl:mt-20 flex justify-end">
+          <div className="2xl:mt-16 mt-16 2xl:mt-20 flex justify-end">
             <button className=" self-end gradient-background rounded rounded-lg px-4 py-3 text-md text-gray-800 font-semibold">
               Discover for Students
             </button>
