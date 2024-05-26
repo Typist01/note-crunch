@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useMemo } from "react";
 
-export const inter = Inter({ subsets: ["latin"] });
-export const quicksand = Quicksand({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 const FeatureItem = ({
   title,

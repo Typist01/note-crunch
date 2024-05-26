@@ -4,8 +4,8 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
-export const inter = Inter({ subsets: ["latin"] });
-export const quicksand = Quicksand({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Note Crush",
