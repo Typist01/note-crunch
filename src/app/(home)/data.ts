@@ -12,13 +12,13 @@ export const features = [
       "Tailor the length and depth of your summaries to match your specific needs. Whether you need a brief overview or a detailed breakdown, SummaNote gives you the flexibility to customize your summaries with just a few clicks.",
     benefit: "Get the information you need, exactly how you need it.",
   },
-  {
-    title: "Multi-language Support",
-    description:
-      "Break down language barriers with our multi-language support feature. SummaNote can summarize text in multiple languages, making it a valuable tool for global users and multilingual documents.",
-    benefit:
-      "Expand your capabilities and reach with seamless multi-language summarization.",
-  },
+  // {
+  //   title: "Multi-language Support",
+  //   description:
+  //     "Break down language barriers with our multi-language support feature. SummaNote can summarize text in multiple languages, making it a valuable tool for global users and multilingual documents.",
+  //   benefit:
+  //     "Expand your capabilities and reach with seamless multi-language summarization.",
+  // },
   {
     title: "User-Friendly Interface",
     description:

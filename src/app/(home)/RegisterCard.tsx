@@ -54,6 +54,7 @@ const RegisterCard: FC<RegisterCardProps> = ({}) => {
               Register to learn more
             </span>
             <Input
+              id="email-register-input"
               className="text-gray-900 font-medium"
               placeholder="your email"
             />
