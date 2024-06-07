@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Note Crush",
+  title: "Note Digest",
   description:
-    "NoteCrush: Summarise large and small texts with Note Crush. The new AI based note summarisation tool. Built for everyone. Transform lecture notes and textbooks into concise study guides, making revision more efficient. Discover insights from millions of unread lines and thousands of texts.",
+    "NoteCrush: Summarise large and small texts with Note Digest. The new AI based note summarisation tool. Built for everyone. Transform your lecture notes and textbooks into concise study guides, making revision more efficient. Discover insights from millions of unread lines and thousands of texts.",
 };
 
 export default function RootLayout({

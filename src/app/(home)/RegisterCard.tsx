@@ -16,10 +16,10 @@ const RegisterCard: FC<RegisterCardProps> = ({}) => {
     }, 2000);
   };
   return (
-    <div className="bg-gradient-to-t from-gray-700 to-gray-900 border xl:max-w-[1000px] p-20 rounded rounded-lg shadow-md text-white text-center">
+    <div className="bg-gradient-to-t from-gray-700 to-gray-900 border xl:max-w-[1000px] p-20 rounded rounded-lg shadow-md text-white text-center min-w-[400px]">
       <h1>What if you could summarise thousands of lines in one click?</h1>
       <br></br>
-      <h1 className="text-2xl mb-10">Summarise everything with Note Crush</h1>
+      <h1 className="text-2xl mb-10">Register now</h1>
       {/* <h1 className="text-lg mb-10 font-semibold"></h1> */}
       {state === "loading" && (
         <>
@@ -50,9 +50,7 @@ const RegisterCard: FC<RegisterCardProps> = ({}) => {
       {state === "idle" && (
         <>
           <label className="space-y-4 items-center text-white">
-            <span className="whitespace-nowrap text-lg">
-              Register to learn more
-            </span>
+            <span className="whitespace-nowrap text-lg">Note Digest</span>
             <Input
               id="email-register-input"
               className="text-gray-900 font-medium"

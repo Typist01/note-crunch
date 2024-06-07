@@ -5,6 +5,8 @@ import { features } from "./data";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useMemo } from "react";
+import Demo from "./Demo";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -21,11 +23,20 @@ const FeatureItem = ({
   return (
     <>
       <div className="feature-item space-y-3 relative">
-        <h3 className="text-2xl font-normal font-semibold text-gray-500">
+        <h3 className="text-2xl font-normal font-semibold text-gray-500 my-4">
+          <span>
+            <Image
+              className="inline-block mr-2"
+              src="/tick-circle.svg"
+              height={25}
+              width={25}
+              alt="somealt"
+            />
+          </span>
           {title}
         </h3>
         <p className="text-lg font-normal text-gray-500">{description}</p>
-        <p className=" font-medium text-sky-800">
+        <p className=" font-medium text-sky-800 ">
           <strong className="">{benefit}</strong>
         </p>
       </div>
@@ -46,12 +57,12 @@ const studentImgPaths = [
 
 export default function Home() {
   const val = useMemo(() => {
-    return studentImgPaths[Math.floor(Math.random() * 9)];
+    return "/chibi-robot-doing-homework.png";
   }, []);
   const heroImgPath = studentImgPaths[Math.floor(Math.random() * 9)];
   return (
     <>
-      <div className="mx-[5%] mt-[7vh]">
+      <div className="mx-[5%] xl:mx-[10%] 2xl:mx-[12%] mt-[7vh]">
         <div className="rotate-[7deg] absolute z-[20] w-[20%] min-w-[130px] rotate-[10] top-[5rem] left-[2rem] visible 2xl:invisible">
           <img className="cover" src="/book.png" />
           {/* <img className="cover rotate-[-14deg]" src="/calendar.png" /> */}
@@ -80,10 +91,11 @@ export default function Home() {
               Streamline Your Study Sessions
             </h5>
             <div className="relative z-10 xl:ml-[40%] 2xl:mt-14 2xl:max-w-xl max-w-xl">
-              <p className="text-2xl mt-5 mb-10">
-                Transform lecture notes and textbooks into concise study guides
+              <p className="text-2xl mt-5 mb-10 font-semibold">
+                Transform your lecture notes and text files into concise study
+                guides
               </p>
-              <p className=" text-xl mt-7">
+              <p className=" text-2xl mt-7">
                 Discover insights from{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-400 font-bold">
                   millions of unread lines
@@ -106,17 +118,18 @@ export default function Home() {
           <RegisterCard />
         </div>
 
-        <div className={"mt-20 mx-[10%] relative " + inter.className}>
+        <div className={"mt-40 mx-[10%] relative " + inter.className}>
           {/* <h3 className="text-xl">Features</h3> */}
           <h4
             className={
-              "text-4xl font-light text-gray-500 " + quicksand.className
+              "text-4xl font-light text-gray-500" + quicksand.className
             }
           >
-            Transform your notes into concise summaries instantly!
+            Transform your notes into concise summaries instantly
           </h4>
+          {/* <h3 className="text-2xl font-light text-gray-500">Coming soon!</h3> */}
 
-          <section className="">
+          <section className="mt-24">
             <motion.div
               animate={{ y: [0, -5, 0, 5, 0] }}
               transition={{ repeat: Infinity, type: "spring", duration: 2 }}
@@ -125,13 +138,13 @@ export default function Home() {
               <img className="cover" src="/chibi-robot-reading-3.png" />
               {/* <img className="cover rotate-[-14deg]" src="/calendar.png" /> */}
             </motion.div>
-            <div className="font-thin text-lg mt-28">
+            <div className="font-thin text-lg mt-12">
               <h2
                 className={
-                  "text-3xl mb-5 text-purple-600 " + quicksand.className
+                  "text-3xl mb-12 text-yellow-600 " + quicksand.className
                 }
               >
-                Why Choose SummaNote?
+                Why Choose Note Digest?
               </h2>
               <div className="features-list grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 m-2">
                 {features.map((feature, i) => (
@@ -145,6 +158,15 @@ export default function Home() {
               </div>
             </div>
           </section>
+        </div>
+
+        <Demo />
+        <div className="flex justify-center my-20">
+          <Link href={"#email-register-input"}>
+            <button className="p-3 font-semibold bg-slate-200 hover:bg-slate-300 rounded rounded-lg">
+              Register now
+            </button>
+          </Link>
         </div>
 
         <footer className="p-4 bg-white shadow mt-8 relative z-[-11]">

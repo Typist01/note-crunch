@@ -10,7 +10,9 @@ const NavBar: FC<NavBarProps> = ({}) => {
     <div className="2xl:m-10 m-6 flex justify-between items-center 2xl:mx-[25%] sm:mx-[15%]">
       <div className="flex">
         <Link href={"/"}>
-          <h1 className="text-3xl font-bold">Note Crush</h1>
+          <h1 className="text-3xl font-bold text-slate-600">
+            Note <span className="font-light">Digest</span>
+          </h1>
         </Link>
         <div className=""></div>
       </div>
