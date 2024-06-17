@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className + " bg-white"}>
         <NavBar />
+        <Toaster />
         {children}
       </body>
     </html>

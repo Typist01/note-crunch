@@ -62,7 +62,7 @@ export default function Home() {
   const heroImgPath = studentImgPaths[Math.floor(Math.random() * 9)];
   return (
     <>
-      <div className="mx-[5%] xl:mx-[10%] 2xl:mx-[12%] mt-[7vh]">
+      <div className="mx-[5%] mt-[7vh]">
         <div className="rotate-[7deg] absolute z-[20] w-[20%] min-w-[130px] rotate-[10] top-[5rem] left-[2rem] visible 2xl:invisible">
           <img className="cover" src="/book.png" />
           {/* <img className="cover rotate-[-14deg]" src="/calendar.png" /> */}
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col xl:flex-row xl:space-x-20 xl:space-y-0 space-y-20  mx-[10%]">
-          <div className="relative rounded rounded-xl bg-gray-100 min-h-[30vh] w-full xl:min-w-[50%] 2xl:minw-[60%] shadow-lg  p-20 overflow-hidden xl:min-w-[650px]">
+          <div className="relative rounded rounded-xl bg-gray-100 w-full xl:min-w-[50%] 2xl:minw-[60%] shadow-lg  p-20 overflow-hidden xl:min-w-[650px]">
             <div className="absolute z-[1] w-[100px] min-w-[130px] rotate-[-7deg] bottom-5 left-[5%] xl:left-[45%] visible xl:invisible flex sm:visible invisible">
               <img className="cover" src="/rocket-1.png" />
               <img
@@ -90,27 +90,25 @@ export default function Home() {
             <h5 className="font-bold text-3xl">
               Streamline Your Study Sessions
             </h5>
-            <div className="relative z-10 xl:ml-[40%] 2xl:mt-14 2xl:max-w-xl max-w-xl">
-              <p className="text-2xl mt-5 mb-10 font-semibold">
-                Transform your lecture notes and text files into concise study
-                guides
+            <div className="relative z-10 xl:ml-[25%] 2xl:mt-14 2xl:max-w-xl max-w-xl">
+              <p className="text-2xl mt-5 mb-7 font-semibold">
+                Transform your notes into concise study guides
               </p>
               <p className=" text-2xl mt-7">
                 Discover insights from{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-400 font-bold">
                   millions of unread lines
-                </span>{" "}
-                and thousands of texts
+                </span>
               </p>
             </div>
-            <div className="max-w-[380px] absolute bottom-0 left-0 invisible xl:visible">
+            <div className="max-w-[220px] absolute bottom-0 left-0 invisible xl:visible">
               <img className="cover" src={val} />
               {/* <img className="cover" src="/student-3.png" /> */}
             </div>
-            <div className="2xl:mt-16 mt-16 2xl:mt-20 flex justify-end">
+            <div className="2xl:mt-10 mt-16 2xl:mt-20 flex justify-end">
               <Link href={"#email-register-input"}>
                 <button className="z-[2] relative shadow-lg self-end gradient-background rounded rounded-lg px-4 py-3 text-md text-gray-800 font-semibold">
-                  Discover for Students
+                  Discover now
                 </button>
               </Link>
             </div>
